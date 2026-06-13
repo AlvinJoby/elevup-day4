@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" data-page="signup">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aurora ID account creation portal" />
+  <title>Aurora ID | Create Account</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <main class="auth-shell">
+    <section class="brand-panel" aria-labelledby="brand-title">
+      <div class="brand-nav">
+        <a class="brand-mark" href="login.html" aria-label="Aurora ID home">
+          <span class="logo-orb" aria-hidden="true">
+            <svg viewBox="0 0 32 32" role="img" aria-label="Aurora logo">
+              <path d="M16 2 29 25H3L16 2Z" fill="currentColor" opacity=".95"></path>
+              <path d="M16 10 22.5 22H9.5L16 10Z" fill="white" opacity=".92"></path>
+            </svg>
+          </span>
+          <span>Aurora ID</span>
+        </a>
+        <button class="theme-toggle" type="button" aria-label="Switch theme" data-theme-toggle>
+          <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Zm0 4a1 1 0 0 1-1-1v-1a1 1 0 1 1 2 0v1a1 1 0 0 1-1 1Zm0-18a1 1 0 0 1-1-1V2a1 1 0 1 1 2 0v1a1 1 0 0 1-1 1Zm10 8a1 1 0 0 1-1 1h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 1 1ZM4 12a1 1 0 0 1-1 1H2a1 1 0 1 1 0-2h1a1 1 0 0 1 1 1Zm15.07 7.07a1 1 0 0 1-1.41 0l-.7-.7a1 1 0 0 1 1.41-1.42l.7.71a1 1 0 0 1 0 1.41ZM7.05 7.05a1 1 0 0 1-1.41 0l-.71-.7a1 1 0 1 1 1.41-1.42l.71.71a1 1 0 0 1 0 1.41Zm12.02-2.12a1 1 0 0 1 0 1.41l-.7.71a1 1 0 0 1-1.42-1.41l.71-.71a1 1 0 0 1 1.41 0ZM7.05 16.95a1 1 0 0 1 0 1.42l-.71.7a1 1 0 1 1-1.41-1.41l.7-.71a1 1 0 0 1 1.42 0Z"/></svg>
+          <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 14.2A8.7 8.7 0 0 1 9.8 3a9 9 0 1 0 11.2 11.2Z"/></svg>
+        </button>
+      </div>
+
+      <div class="brand-copy">
+        <p class="eyebrow">Launch-ready onboarding</p>
+        <h1 id="brand-title">Create a secure account in a polished product flow.</h1>
+        <p>Real-time validation, password strength scoring, and a premium responsive interface.</p>
+      </div>
+
+      <div class="feature-grid" aria-label="Platform highlights">
+        <div class="feature-card">
+          <span class="feature-icon" aria-hidden="true">U</span>
+          <strong>Unique Identity</strong>
+          <p>Username and email checks simulate production account rules.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon" aria-hidden="true">M</span>
+          <strong>Modern Validation</strong>
+          <p>Inline feedback while typing, on blur, and on submit.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon" aria-hidden="true">K</span>
+          <strong>Key Strength</strong>
+          <p>Animated password meter with clear security guidance.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon" aria-hidden="true">R</span>
+          <strong>Ready to Demo</strong>
+          <p>Accounts persist locally for login simulation.</p>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div>
+          <span>Last login</span>
+          <strong data-last-login>Not available yet</strong>
+        </div>
+        <div>
+          <span>Registered users</span>
+          <strong data-user-count>0</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-panel" aria-labelledby="signup-title">
+      <div class="auth-card signup-card">
+        <div class="card-header">
+          <div class="mobile-brand">
+            <span class="logo-orb" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><path d="M16 2 29 25H3L16 2Z" fill="currentColor"></path><path d="M16 10 22.5 22H9.5L16 10Z" fill="white" opacity=".92"></path></svg>
+            </span>
+            <span>Aurora ID</span>
+          </div>
+          <p class="eyebrow">Create account</p>
+          <h2 id="signup-title">Start your workspace</h2>
+          <p>Use a strong password and a unique username to create a mock account.</p>
+        </div>
+
+        <form class="auth-form" id="signupForm" novalidate>
+          <div class="field" data-field="fullName">
+            <span class="input-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5Zm0 2c-4.42 0-8 2.24-8 5v1a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-1c0-2.76-3.58-5-8-5Z"/></svg>
+            </span>
+            <input id="fullName" name="fullName" type="text" autocomplete="name" placeholder=" " required />
+            <label for="fullName">Full name</label>
+            <p class="message" aria-live="polite"></p>
+          </div>
+
+          <div class="field" data-field="email">
+            <span class="input-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 6h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Zm0 2v.3l8 5 8-5V8H4Zm16 8v-5.35l-7.47 4.67a1 1 0 0 1-1.06 0L4 10.65V16h16Z"/></svg>
+            </span>
+            <input id="signupEmail" name="email" type="email" autocomplete="email" placeholder=" " required />
+            <label for="signupEmail">Email address</label>
+            <p class="message" aria-live="polite"></p>
+          </div>
+
+          <div class="field" data-field="username">
+            <span class="input-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3a4 4 0 0 1 4 4v1a4 4 0 0 1-8 0V7a4 4 0 0 1 4-4Zm0 11c4.42 0 8 2.01 8 4.5V20a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1.5C4 16.01 7.58 14 12 14Z"/></svg>
+            </span>
+            <input id="username" name="username" type="text" autocomplete="username" placeholder=" " required />
+            <label for="username">Username</label>
+            <p class="message" aria-live="polite"></p>
+          </div>
+
+          <div class="field" data-field="password">
+            <span class="input-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M17 9h1a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2h1V7a5 5 0 0 1 10 0v2Zm-8 0h6V7a3 3 0 0 0-6 0v2Zm3 8.75a1.75 1.75 0 1 0 0-3.5 1.75 1.75 0 0 0 0 3.5Z"/></svg>
+            </span>
+            <input id="signupPassword" name="password" type="password" autocomplete="new-password" placeholder=" " required />
+            <label for="signupPassword">Password</label>
+            <button class="visibility-toggle" type="button" aria-label="Show password" data-toggle-password="signupPassword">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5c5.5 0 9.5 5.1 9.5 7s-4 7-9.5 7-9.5-5.1-9.5-7S6.5 5 12 5Zm0 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm0-2a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"/></svg>
+            </button>
+            <p class="message" aria-live="polite"></p>
+          </div>
+
+          <div class="strength" aria-live="polite">
+            <div class="strength-top">
+              <span>Password strength</span>
+              <strong data-strength-label>Weak</strong>
+            </div>
+            <div class="strength-track"><span data-strength-bar></span></div>
+          </div>
+
+          <div class="field" data-field="confirmPassword">
+            <span class="input-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="m10.7 15.3 6-6a1 1 0 1 0-1.4-1.4L10 13.17 7.7 10.9a1 1 0 0 0-1.4 1.42l3 3a1 1 0 0 0 1.4 0ZM12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20Z"/></svg>
+            </span>
+            <input id="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password" placeholder=" " required />
+            <label for="confirmPassword">Confirm password</label>
+            <p class="message" aria-live="polite"></p>
+          </div>
+
+          <label class="check-line terms-line">
+            <input id="terms" name="terms" type="checkbox" required />
+            <span>I agree to the <a href="#" data-legal>Terms</a> and <a href="#" data-legal>Privacy Policy</a></span>
+          </label>
+          <p class="message form-message" data-terms-message aria-live="polite"></p>
+
+          <button class="primary-button" type="submit" data-submit>
+            <span>Create account</span>
+            <span class="spinner" aria-hidden="true"></span>
+          </button>
+        </form>
+
+        <div class="security-row" aria-label="Security indicators">
+          <span>Secure connection</span>
+          <span>Encrypted authentication</span>
+          <span>Privacy protected</span>
+        </div>
+
+        <p class="auth-footer">Already have an account? <a href="login.html">Sign in</a></p>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-backdrop" data-modal hidden>
+    <section class="success-modal" role="dialog" aria-modal="true" aria-labelledby="successTitle">
+      <div class="success-badge" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="m10 15.17 7.59-7.58L19 9l-9 9-5-5 1.41-1.41L10 15.17Z"/></svg>
+      </div>
+      <h2 id="successTitle">Account Created Successfully</h2>
+      <p>Your Aurora ID profile is saved locally and ready for login.</p>
+      <a class="primary-button modal-button" href="login.html">Go to Login</a>
+    </section>
+  </div>
+
+  <div class="toast-region" aria-live="polite" aria-atomic="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
